@@ -1,11 +1,14 @@
+import java.util.Locale;
 import java.util.Scanner;
 
 public class DataInput {
     public static void main(String[] args){
+        Locale.setDefault(Locale.US);
         Scanner input = new Scanner(System.in);
         String name;
         int age;
         double wage;
+        
         System.out.println("type your name:");
         name = input.next();
         System.out.println("type your age:");
@@ -14,7 +17,5 @@ public class DataInput {
         wage = input.nextDouble();
 
         System.out.printf("The name entered was %s, you have %d years old and have a wage of %.2f", name, age, wage);
-
-
     }
 }
