@@ -17,5 +17,6 @@ public class DataInput {
         wage = input.nextDouble();
 
         System.out.printf("The name entered was %s, you have %d years old and have a wage of %.2f", name, age, wage);
+        input.close();
     }
 }
