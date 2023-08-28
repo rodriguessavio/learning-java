@@ -18,6 +18,16 @@ public class ProductTest {
 
         System.out.println(product);
 
+        System.out.println("Enter the number of products to be added in stock: ");
+        int quantity = entrada.nextInt();
+        product.AddProducts(quantity);
+
+        System.out.println("Update data: " + product);
+
+        System.out.println("Enter the number of products to be removed from stock: ");
+        quantity = entrada.nextInt();
+        product.RemoveProducts(quantity);
+        System.out.println("Update data: " + product);
         
 
         entrada.close();
