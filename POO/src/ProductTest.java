@@ -16,7 +16,9 @@ public class ProductTest {
         System.out.println("Quantity in stock: ");
         product.quantity = entrada.nextInt();
 
-        System.out.println(product.name + ", " + product.price + ", " + product.quantity);
+        System.out.println(product);
+
+        
 
         entrada.close();
 

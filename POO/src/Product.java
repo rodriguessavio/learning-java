@@ -16,4 +16,11 @@ public class Product {
         this.quantity -= quantity;
     }
 
+    @Override
+    public String toString() {
+        return "Product data: " + name + ", $" + price + ", " + quantity + " units, Total: $" + TotalValueInStock ();
+    }
+
+    
+
 }
